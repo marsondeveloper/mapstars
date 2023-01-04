@@ -1,0 +1,113 @@
+{
+    "H": {
+        "Technology": "Technologien",
+        "Advantages": "Vorteile",
+        "Howitworks": "Wie es funktioniert",
+        "Packages": "Pakete",
+        "Contact": "Kontakt",
+        "Getstarted": "Loslegen"
+    },
+    "home": {
+        "banner": "Gewinnen Sie regelmäßig neue Kunden mit Hilfe moderner Technologien"
+    },
+    "HowWork": {
+        "work": "Wie funktioniert es?",
+        "text1": "Drei einfache Schritte zur Implementierung der GEO-Technologie",
+        "text2": "In der ersten Phase registrieren unsere Spezialisten Ihr Unternehmen im globalen Unternehmensverzeichnis von Google My Business sowie in einigen anderen Diensten. Wir sammeln und veröffentlichen: grundlegende Informationen über Ihr Unternehmen (Beschreibung, genaue Adresse, Fotos, Telefonnummern, Arbeitszeiten) und optimieren und passen das Profil der Institution an.",
+        "text3": "Unser Unternehmen bietet Ihnen gerne eine Standard-Fotosession Ihres Unternehmens an. Sowie eine moderne 360°-Panorama-Fotosession.",
+        "text4": "Wenn Ihr Unternehmen keine Website hat, richten wir für Sie eine kostenlose Unternehmensseite von Google oder eine erweiterte Version von Stars Maps ein.",
+        "text5": "Die Google-Suche liefert dem Nutzer Informationen über nahe gelegene, beliebte und zugängliche Orte. Nach der Registrierung, potenzielle Besucher können leicht Informationen über Ihre finden Unternehmen mit der Google-Suche und Google Maps. Durch die Registrierung, Sie werden die Zahl der Neukunden und Anrufe steigern deine Sache.",
+        "text6": "Die Technologie der Motivation und sozialen Empfehlungen",
+        "text7": "Die Motivationstechnologie ist eine Eigenentwicklung von uns Unternehmen. Es soll die Anzahl der Bewertungen erhöhen und Empfehlungen zu Ihrem Unternehmen auf Kosten von alte Kunden, was sich direkt auf die Zahl der Neukunden auswirkt Kunden.",
+        "text8": "Um die Technologie zu implementieren, verwenden wir Träger - Motivatoren. Sie kommen in verschiedenen Formaten: eine Tischplatte, ein Schild, a Banner, eine Visitenkarte, ein Aufkleber, eine Produktverpackung Element, eine Broschüre und so weiter. Unsere Aufgabe ist es, zu integrieren den Einsatz des Motivators in Ihren Geschäftsprozess.",
+        "text9": "Mit Ihrer Hilfe oder alleine liest der Klient mit einem mobilen Gerät den QR-Code des Motivators und geht auf eine spezielle Website der Beschwerde der Institution. Auf dieser Seite kann er soziale Empfehlungen teilen und Feedback zum Besuch Ihrer Einrichtung hinterlassen, um Sie so im Netzwerk zu bewerben. Werbebotschaften über Ihr Unternehmen werden in sozialen Netzwerken (Facebook, Instagram) oder in Form von Nachrichten über Instant Messenger (Viber, WhatsApp, Telegram) verbreitet.",
+        "text10": "Anmeldung",
+        "text11": "Die Einführung der Technologie erhöht die Anzahl der auf Google Maps hinterlassenen Bewertungen erheblich, was wiederum die Popularität und Häufigkeit der Veröffentlichung in Google-Diensten erhöht. Jeder Kunde wird zu einem Werkzeug, um neue Besucher anzuziehen, unsere Technologie ist eine moderne Version der Mundpropaganda für Ihr Unternehmen.",
+        "text12": "Statistik, Analytik, Entwicklung, Support",
+        "text13": "Dank moderner Technologien lassen sich Informationen einfach erfassen und für weitere Analysen sammeln. In Ihrem persönlichen Google My Business-Konto Ihrer Institution können Sie vollständige Statistiken über Aufrufe, die Anzahl der Anrufe und die verlegten Routen einsehen. Auf Ihren Wunsch können wir zusätzliche Berichte und Empfehlungen bereitstellen, anhand derer Sie Ihre Dienstleistungen und Produkte effektiver und schneller auf dem Markt bewerben können. Unsere Kunden können sich jederzeit an uns wenden, um sich beraten zu lassen.",
+        "text14": "Wie Sie wächst und entwickelt sich auch unser Unternehmen ständig. Sehr bald planen wir, neue Vorschläge für auf den Markt zu bringen Werbung und Entwicklung. Jetzt arbeiten wir an einem System zur Messung der Kundenbindung und eine Videopräsentation der Einrichtung.",
+        "text15": "Unsere Forschungsabteilung arbeitet ständig daran, Werbeelemente von Google, Facebook, Instagram und anderen Plattformen zu testen. Wenn Sie mit uns in Kontakt bleiben, erfahren Sie immer das Neueste aus der Welt der Werbung. Der Erfolg Ihres Unternehmens liegt in unserem Interesse. Stars Maps ist eine Werbeagentur und Technologie der neuen Generation!"
+    },
+    "Awards": {
+        "text1": "Unsere Auszeichnungen",
+        "text2": "Unser Unternehmen hat eine Reihe von Städten im Dienst von Google und Booking"
+    },
+    "Contacts": {
+        "text1": "Bereit zum Abheben?",
+        "text2": "In Kontakt kommen"
+    },
+    "Footer": {
+        "text1": "Datenschutz-Bestimmungen",
+        "text2": "Nutzungsbedingungen",
+        "text3": "Planen Sie einen Anruf",
+        "dev": "Entwicklung"
+    },
+    "getStarted": {
+        "text1": "Kontakt Formular",
+        "text2": "Melde dich.",
+        "text3": "Eine Nachricht schicken",
+        "text4": "Ihre Bewerbung wird angenommen!"
+    },
+    "Examples": {
+        "text1": "Implementierungsbeispiele",
+        "text2": "Erhöhung des Kundenflusss",
+        "text3": "Erhöhung des Kundenflusss"
+    },
+    "Packages": {
+        "text1": "Paketedienste",
+        "text2": "Das Paket enthält:"
+    },
+    "PrivacyPolicy": {
+        "text1": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, unde. Porro sunt a quisquam neque? Amet impedit obcaecati sint reiciendis tempore sed libero? Ipsum asperiores quibusdam, quaeaut modi rerum.",
+        "text2": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, unde. Porro sunt a quisquam neque? Amet impedit obcaecati sint reiciendis tempore sed libero? Ipsum asperiores quibusdam, quaeaut modi rerum."
+    },
+    "Slider": {
+        "text1": "Autowaschkeramikprofi Lettland",
+        "text2": "Ceramic Pro ist der erste Kunde des Unternehmens in Lettland sowie der erste Kunde im Ausland.",
+        "text3": "Nachdem das Autowaschsystem und den Ansatz für die Zusammenarbeit mit dem Kunden unter der neuen Marke Ceramic Pro -Marke geändert wurde, bestand die Aufgabe darin, mehr Kunden in der Touristensaison 16/17 zu bringen als in der 15/16 -Saison.",
+        "text4": "Der Schwerpunkt der Fotosessions-/Fotopräsentation lag darauf, das Keramik -Pro -Logo und die neue Unternehmensidentität sowie der Workflow und das höhere Niveau des durchschnittlichen Kunden zu sein. Dieses Projekt ist ein Pilotprojekt für unser Unternehmen in Bezug auf die Einführung gewordenEin einzigartiges Motivatordesign mit dem Logo des Unternehmens des Kunden. Die Aufgabe bestand auch darin, das Problem in der Google-Suche nach einem russischsprachigen Touristen/Kunden zu orientieren. ",
+        "text5": "Das Ergebnis war nicht lange in der nächsten 16/17 -Saison in Jurmala, 17% mehr Kunden wandten sich an die Autowäsche als in der 15/16der nächste", 
+        "text6": "Ceramic Pro ist der erste Kunde des Unternehmens in Lettland sowie der erste Kunde im Ausland.Nachdem Sie das Autowaschsystem und den Ansatz zur Zusammenarbeit mit dem Kunden unter der Marke 'New Ceramic Pro Marke' gewechselt haben, bestand die Aufgabe darin, mehr Kunden in der Touristensaison 16/17 zu bringen als in der Saison 15/16.Der Schwerpunkt der Fotosession/Fotopräsentation lag darauf, das Keramik -Pro -Logo und die neue Unternehmensidentität sowie der Workflow und das höhere Niveau des durchschnittlichen Kunden zu sein.Dieses Projekt ist zu einem Pilotprojekt für unser Unternehmen geworden, um ein einzigartiges Motivatordesign mit dem Logo des Unternehmens des Kunden einzuführen.Die Aufgabe bestand auch darin, das Problem in der Google-Suche nach einem russischsprachigen Touristen/Kunden zu orientieren.Das Ergebnis war nicht lange in der nächsten 16/17 -Saison in Jurmala, 17% mehr Kunden wandten sich an die Autowäsche als in der 15/16 -Saison.Nach unseren Prognosen sollten sie über den nächsten bis zu 25% wachsen", 
+        "text7": "Ceramic Pro ist der erste Kunde des Unternehmens in Lettland sowie der erste Kunde im Ausland.Nachdem Sie das Autowaschsystem und den Ansatz zur Zusammenarbeit mit dem Kunden unter der Marke 'New Ceramic Pro Marke' gewechselt haben, bestand die Aufgabe darin, mehr Kunden in der Touristensaison 16/17 zu bringen als in der Saison 15/16.Der Schwerpunkt der Fotosession/Fotopräsentation lag darauf, das Keramik -Pro -Logo und die neue Unternehmensidentität sowie der Workflow und das höhere Niveau des durchschnittlichen Kunden zu sein.Dieses Projekt ist zu einem Pilotprojekt für unser Unternehmen geworden, um ein einzigartiges Motivatordesign mit dem Logo des Unternehmens des Kunden einzuführen.Die Aufgabe bestand auch darin, das Problem in der Google-Suche nach einem russischsprachigen Touristen/Kunden zu orientieren.Das Ergebnis war nicht lange in der nächsten 16/17 -Saison in Jurmala, 17% mehr Kunden wandten sich an die Autowäsche als in der 15/16 -Saison.Nach unseren Prognosen sollten sie über den nächsten bis zu 25% wachsen", 
+        "text8": "Ceramic Pro ist der erste Kunde des Unternehmens in Lettland sowie der erste Kunde im Ausland.Nachdem Sie das Autowaschsystem und den Ansatz zur Zusammenarbeit mit dem Kunden unter der Marke 'New Ceramic Pro Marke' gewechselt haben, bestand die Aufgabe darin, mehr Kunden in der Touristensaison 16/17 zu bringen als in der Saison 15/16.Der Schwerpunkt der Fotosession/Fotopräsentation lag darauf, das Keramik -Pro -Logo und die neue Unternehmensidentität sowie der Workflow und das höhere Niveau des durchschnittlichen Kunden zu sein.Dieses Projekt ist zu einem Pilotprojekt für unser Unternehmen geworden, um ein einzigartiges Motivatordesign mit dem Logo des Unternehmens des Kunden einzuführen.Die Aufgabe bestand auch darin, das Problem in der Google-Suche nach einem russischsprachigen Touristen/Kunden zu orientieren.Das Ergebnis war nicht lange in der nächsten 16/17 -Saison in Jurmala, 17% mehr Kunden wandten sich an die Autowäsche als in der 15/16 -Saison.Nach unseren Prognosen sollten sie über den nächsten bis zu 25% wachsen" 
+    },
+    "SocialNetworks": {
+        "text1": "Soziale Netzwerke",
+        "text2": "mit Geo -Werbe -Technologie",
+        "text3": "Jedes Unternehmen versucht, durch Kundenzufriedenheit Gewinn zu erzielen.Da jedoch solche Bedürfnisse erfüllt werden, versucht kein Unternehmen, den Kunden zu nutzen, um sein Produkt oder seine Dienstleistung zu fördern.Dies geschieht alleine in Form von 'Mundpropaganda', wie es im Volksmund genannt wird.Das moderne Geschäft bleibt mit dem Kunden in Kontakt mit mobilen Anwendungen wie Instagram, Telegram oder Twitter, Instant -Messenger (Viber, Skype, WhatsApp) oder sozialen Netzwerken (Facebook usw.)..",
+        "text4": "Was ist, wenn wir Ihnen eine einfache Technik anbieten, mit der Sie mehr neue Kunden auf Kosten alter mit sozialen Netzwerken und mobilen Anwendungen mitbringen können?Darüber hinaus nicht auf der Skala eines einfachen Mundpropaganders, sondern eines modernen, unter Verwendung der oben genannten sozialen Netzwerke und mobilen Anwendungen?",
+        "text5": "Mit ein paar einfachen Implementierungsschritten und einfachen Anweisungen zur Verwendung und Ihre Kunden werden für Sie arbeiten.",
+        "text6": "Geo -Werbung von Stars Maps ist das Mundwort unserer Zeit.",
+        "text7": "Geo -Technologie - Mundpropaganda des modernen digitalen Marktes!"
+    },
+    "Technology": {
+        "text1": "Geo Advertising ist eine Technologie für die automatische Förderung eines Unternehmens mit modernen Technologien und Dienstleistungen.",
+        "text2": "Die Technologie ist speziell für fast alle Arten von Unternehmen hergestellt.Cafés, Restaurants, Schönheitssalons und Friseure, Hotels und Hostels, Servicestationen und Reifengeschäfte, Reparaturdienstzentren, Online -Geschäfte, Lebensmittelgeschäfte, Supermärkte, Fotostudios, Verlagshäuser, Konditorien und viele andere haben die Technologie bereits genutzt." 
+    },
+    "TermsOfService": {
+        "text1": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, unde. Porro sunt a quisquam neque? Amet impedit obcaecati sint reiciendis tempore sed libero? Ipsum asperiores quibusdam, quae aut modi rerumaut modi rerum.", 
+        "text2": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, unde. Porro sunt a quisquam neque? Amet impedit obcaecati sint reiciendis tempore sed libero? Ipsum asperiores quibusdam, quae aut modi rerumaut modi rerum.",
+        "text3": "Nutzungsbedingungen" 
+    },
+    "Advantages": {
+        "text1": "Vorteile" 
+    },
+    "S": {
+        "text1": "Jedes Unternehmen versucht, durch Kundenzufriedenheit Gewinn zu erzielen.Da jedoch solche Bedürfnisse erfüllt werden, versucht kein Unternehmen, den Kunden zu nutzen, um sein Produkt oder seine Dienstleistung zu fördern.Dies geschieht alleine in Form von 'Mundpropaganda', wie es im Volksmund genannt wird.Das moderne Geschäft bleibt mit dem Kunden in Kontakt mit mobilen Anwendungen wie Instagram, Telegram oder Twitter, Instant -Messenger (Viber, Skype, WhatsApp) oder sozialen Netzwerken (Facebook usw.).", 
+        "text2": "Was ist, wenn wir Ihnen eine einfache Technik anbieten, mit der Sie mehr neue Kunden auf Kosten alter mit sozialen Netzwerken und mobilen Anwendungen mitbringen können?Darüber hinaus nicht auf der Skala eines einfachen Mundpropaganders, sondern eines modernen, unter Verwendung der oben genannten sozialen Netzwerke und mobilen Anwendungen?", 
+        "text3": "Mit ein paar einfachen Implementierungsschritten und einfachen Anweisungen zur Verwendung und Ihre Kunden werden für Sie arbeiten.", 
+        "text4": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, unde. Porro sunt a quisquam neque? Amet impedit obcaecati sint reiciendis tempore sed libero? Ipsum asperiores quibusdam, quae aut modi rerumaut modi rerum.",
+        "text5": "Mit ein paar einfachen Implementierungsschritten und einfachen Anweisungen für die Verwendung und Ihre Kunden werden für Sie arbeiten.",
+        "text7": "Mit ein paar einfachen Implementierungsschritten und einfachen Anweisungen für die Verwendung und Ihre Kunden werden für Sie arbeiten.",
+        "text6": "Anzeigenwörter", 
+        "text8": "Einrichten" 
+    },
+    "Service": {
+        "text1": "Wir arbeiten mit solchen", 
+        "text2": "Dienstleistungen"
+    },
+    "awards": {
+        "text1": "Unsere Auszeichnungen", 
+        "text2": "Unser Unternehmen hat eine Reihe von Städten im Dienst von Google und Buchung"
+    }
+}
