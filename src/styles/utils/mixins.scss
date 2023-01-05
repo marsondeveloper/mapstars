@@ -1,0 +1,188 @@
+@import "./vars";
+@import "./typography";
+
+// media //
+@mixin mobile {
+  @media (min-width: 320px) and (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin iPad {
+  @media (min-width: 768px) and (max-width: 1023px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: 1024px) and (max-width: 1279px) {
+    @content;
+  }
+}
+
+@mixin onDesktop {
+  @media (min-width: 1280px) and (max-width: 1919px) {
+    @content;
+  }
+}
+
+@mixin full {
+  @media (min-width: 1920px) {
+    @content;
+  }
+}
+
+// Адаптив //
+@mixin adaptiv-value($property, $startSize, $minSize, $type) {
+	$addSize: $startSize - $minSize;
+	@if $type==1 {
+		//Якщо менше контейнера
+		#{$property}: $startSize + px;
+		@media (max-width: #{$maxWidthContainer + px}) {
+			#{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidthContainer - 320}));
+		}
+	} @else if $type==2 {
+		//Якщо більше контейнера
+		#{$property}: $startSize + px;
+		@media (min-width: #{$maxWidthContainer + px}) {
+			#{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth - 320}));
+		}
+	} @else {
+		//Завжди
+		#{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth - 320}));
+	}
+}
+
+@mixin logo {
+  object-fit: contain;
+  @include adaptiv-value("height", 49, 28, 0);
+  @include adaptiv-value("width", 225, 140, 0);
+}
+
+@mixin button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  border-radius: 30px;
+  width: max-content;
+  color: #fff;
+  font-family: 'TTFirsNeue500';
+  font-weight: 500;
+  font-size: 16px;
+}
+
+@mixin appBackground {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 80%;
+}
+
+// // width Conteiner {
+@mixin widthConteiner {
+  @media (min-width: 1024px) and (max-width: 1919px) {
+    width: calc(100vw - #{2 * 60 + px});
+  }
+
+  @include full {
+    width: 1556px;
+  }
+
+  @include iPad {
+    width: calc(100vw - #{2 * 20 + px});
+  }
+
+  @include mobile {
+    width: calc(100vw - #{2 * 16 + px});
+  }
+}
+
+//animation//
+@mixin keyframes($animation-name) {
+  @-webkit-keyframes #{$animation-name} {
+    @content;
+  }
+  @keyframes #{$animation-name} {
+    @content;
+  }
+}
+
+@mixin animation($str) {
+  -webkit-animation: #{$str};
+  animation: #{$str};
+}
+
+@include keyframes(scaleReduce) {
+  0% {
+    scale: 1;
+  }
+  100% {
+    scale: 0.8;
+  }
+}
+
+@include keyframes(scaleAdd) {
+  0% {
+    scale: 1;
+  }
+  100% {
+    scale: 1.2;
+  }
+}
+
+@include keyframes(scaleBtn) {
+  0% {
+    scale: 1;
+  }
+  100% {
+    scale: 1.1;
+  }
+}
+
+@include keyframes(blurBtn) {
+  0% {
+    filter: blur(50px);
+  }
+  100% {
+    filter: blur(30px);
+  }
+}
+
+@include keyframes(backgroundAnim) {
+  0% {
+    background: $orangeGradient;
+  }
+  100% {
+    background: linear-gradient(103.85deg, #F33F5E 0%, #FA8550 56.31%, #FA50AC 98.48%);
+  }
+}
+
+@include keyframes(rotateAnim) {
+  0% {
+    transform: translate(-50%, -50%) rotate(0);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(179.4deg);
+  }
+}
+
+@include keyframes(backgroundHome) {
+  0% {
+    background: url(../../images/homePage1.png);
+  }
+  100% {
+    background: url(../../images/homePage2.png);
+  }
+}
+
+@include keyframes(decor) {
+  0% {
+    transform: scale(1) translateX(-50%);
+    // opacity: 50%;
+  }
+  100% {
+    transform: scale(0.93) translateX(-50%);
+    // opacity: 80%;
+  }
+}
+

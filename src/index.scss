@@ -1,0 +1,68 @@
+@import "./styles/utils/vars";
+/* Скидання стилів */
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'TTFirsNeue', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 120%;
+  margin: 0;
+  color: $dark;
+}
+
+ul {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: inherit;
+	font-size: inherit;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  padding: 0;
+}
+
+img {
+  vertical-align: top;
+}
+
+// параметри для скрол //
+::-webkit-scrollbar {
+  height: 12px;
+  width: 6px;
+  background-color: rgba(239, 239, 239, 1);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $orange;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $dark;
+}

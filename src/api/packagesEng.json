@@ -1,0 +1,59 @@
+[
+  {
+    "name": "business",
+    "title": "My business",
+    "whom": "Suitable for new or small business",
+    "includes": [
+      "Registering your business on a Google map",
+      "Setting up Google My Business",
+      "Standard photo shoot by Google Trusted Photographer",
+      "Recommendations for promotion on the Google Map",
+      "Google website"
+    ]
+  },
+  {
+    "name": "advanced",
+    "title": "Advanced",
+    "whom": "Promotion with help of the unique technology of motivation",
+    "includes": [
+      "Registering your business on a Google map",
+      "Setting up Google My Business",
+      "Keyword Optimization",
+      "Extended Photoshoot by Google Certified Photographer",
+      "The technology of motivation and social recommendations",
+      "30 days of free consultation and email support",
+      "Google website"
+    ]
+  },
+  {
+    "name": "advertising",
+    "title": "GEO advertising",
+    "whom": "Efficient GEO ads",
+    "includes": [
+      "Registering your business on a Google map",
+      "Setting up Google My Business",
+      "Keyword Optimization",
+      "Extended Photoshoot by Google Certified Photographer",
+      "Standard panoramic photo session",
+      "The technology of motivation and social recommendations",
+      "70 days of free consultation and email support",
+      "Website development"
+    ]
+  },
+  {
+    "name": "maximum",
+    "title": "Maximum",
+    "whom": "Maximum clients aquisition",
+    "includes": [
+      "Registering your business on a Google map",
+      "Keyword Optimization",
+      "Extended Photoshoot by Google Certified Photographer",
+      "Standard panoramic photo session",
+      "Making a 30-second video for Google maps",
+      "The technology of motivation and social recommendations",
+      "Google My Business training course for employees",
+      "90 days of free consultation and email support",
+      "Website development"
+    ]
+  }
+]

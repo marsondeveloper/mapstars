@@ -1,0 +1,91 @@
+@import "../../styles/utils/vars";
+@import "../../styles/utils/typography.scss";
+@import "../../styles/utils/mixins.scss";
+
+.Awards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__title {
+    @include h2;
+  }
+
+  &__subtitle {
+    @include adaptiv-value("font-size", 22, 16, 0);
+    line-height: 129%;
+    text-align: center;
+    padding-top: 12px;
+  }
+
+  &__companies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding-top: 36px;
+
+    @include mobile {
+      max-height: 430px;
+      padding-bottom: 30px;
+      overflow-y: scroll;
+      gap: 20px;
+      margin-top: 30px;
+    }
+  }
+
+  &__company {
+    @include adaptiv-value("width", 300, 140, 0);
+    @include adaptiv-value("height", 160, 100, 0);
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 1);
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.26);
+    padding: 10px;
+    // cursor: pointer;
+    // transition: all 0.3s ease;
+
+    &--1 {
+      background: url(../../images/awards-icons/1.svg) no-repeat center;
+      background-size: 70% 70%;
+    }
+
+    &--2 {
+      background: url(../../images/awards-icons/2.svg) no-repeat center;
+      background-size: 70% 70%;
+    }
+
+    &--3 {
+      background: url(../../images/awards-icons/3.svg) no-repeat center;
+      background-size: 70% 70%;
+    }
+
+    &--4 {
+      background: url(../../images/awards-icons/4.svg) no-repeat center;
+      background-size: 70% 70%;
+    }
+
+    &--5 {
+      background: url(../../images/awards-icons/5.svg) no-repeat center;
+      background-size: 70% 70%;
+    }
+
+    &--6 {
+      background: url(../../images/awards-icons/6.svg) no-repeat center;
+      background-size: 70% 70%;
+    }
+
+    &--7 {
+      background: url(../../images/awards-icons/7.svg) no-repeat center;
+      background-size: 70% 70%;
+    }
+
+    &--8 {
+      background: url(../../images/awards-icons/8.svg) no-repeat center;
+      background-size: 70% 70%;
+    }
+
+    // &:hover {
+    //   box-shadow: 1px 4px 16px rgba(0, 0, 0, 0.6);
+    // }
+  }
+}

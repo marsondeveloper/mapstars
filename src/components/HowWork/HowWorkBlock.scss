@@ -1,0 +1,52 @@
+@import "../../styles/utils/vars";
+@import "../../styles/utils/typography";
+@import "../../styles/utils/mixins";
+
+.HowWorkBlock {
+  display: flex;
+  flex-direction: column;
+
+  &--1 {
+    margin-top: 57px;
+  }
+
+  &--3 {
+    margin-top: 57px;
+  }
+
+  @include iPad {
+    margin-top: 0;
+  }
+
+  @include mobile {
+    margin-top: 0;
+  }
+
+  &__step {
+    color: rgba(243, 63, 94, 1);
+    @include adaptiv-value("font-size", 20, 16, 0);
+    line-height: 129%;
+  }
+
+  &__title {
+    @include h3;
+    &:not(&:last-child) {
+      padding-bottom: 16px;
+    }
+  }
+
+  &__contentBlock {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &__content {
+    @include adaptiv-value("font-size", 17, 15, 0);
+    line-height: 150%;
+
+    @include mobile {
+      line-height: 120%;
+    }
+  }
+}

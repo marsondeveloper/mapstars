@@ -1,0 +1,78 @@
+@font-face {
+  font-family: 'TTFirsNeue';
+  src: url('../../fonts/TTFirsNeue-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'TTFirsNeueMedium';
+  src: url('../../fonts/TTFirsNeue-DemiBold.ttf');
+}
+
+@font-face {
+  font-family: 'TTFirsNeue500';
+  src: url('../../fonts/TTFirsNeue-Medium.ttf');
+}
+
+@font-face {
+  font-family: 'TTFirsNeueBold';
+  src: url('../../fonts/TTFirsNeue-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Gilroy', sans-serif;
+  src: url('../../fonts/gilroy-semibold.ttf') format("ttf");
+}
+
+@mixin h1 {
+  font-family: 'TTFirsNeue500';
+  @include adaptiv-value("font-size", 76, 36, 0);
+  font-weight: 500;
+  line-height: 100%;
+
+  @include tablet {
+    font-size: 64px;
+  }
+
+  @include iPad {
+    font-size: 54px;
+  }
+
+  @include mobile {
+    font-size: 40px;
+  }
+}
+
+@mixin h2 {
+  font-family: 'TTFirsNeueMedium', serif;
+  @include adaptiv-value("font-size", 48, 28, 0);
+  font-weight: 600;
+  line-height: 129%;
+  background: -webkit-linear-gradient(103.85deg, #FA8550 0%, #F33F5E 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  @include mobile {
+    text-align: center;
+  }
+}
+
+@mixin h3 {
+  font-family: 'TTFirsNeueMedium', serif;
+  @include adaptiv-value("font-size", 36, 18, 0);
+  line-height: 129%;
+  font-weight: 600;
+}
+
+@mixin h4 {
+  font-family: 'Gilroy', sans-serif;
+  @include adaptiv-value("font-size", 24, 16, 0);
+  line-height: 116%;
+  font-weight: 600;
+  color: $dark;
+}
+
+@mixin linkText {
+  font-size: 16px;
+  line-height: 100%;
+  color: $dark;
+}

@@ -1,0 +1,85 @@
+@import "../../styles/utils/vars";
+@import "../../styles/utils/typography.scss";
+@import "../../styles/utils/mixins.scss";
+
+.SocialNetworksWith {
+  position: relative;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 0.8fr 1.2fr;
+  height: max-content;
+  @include adaptiv-value("gap", 70, 20, 0);
+  
+  @include iPad {
+    grid-template-columns: 0.6fr 1.4fr;
+  }
+
+  @include mobile {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    font-family: 'TTFirsNeueMedium', serif;
+    color: rgba(17, 26, 69, 1);
+    font-weight: 600;
+    line-height: 129%;
+    @include adaptiv-value("font-size", 50, 30, 0);
+
+    &--span {
+      background: -webkit-linear-gradient(103.85deg, #FA8550 0%, #F33F5E 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    &:not(&:last-child) {
+      margin-bottom: 16px;
+    }
+
+    @include mobile {
+      text-align: center;
+    }
+  }
+
+  &__info {
+    color: $dark;
+    @include adaptiv-value("font-size", 17, 15, 0);
+    line-height: 150%;
+    &:not(&:last-child) {
+      margin-bottom: 10px;
+    }
+
+    @include mobile {
+      line-height: 120%;
+    }
+
+    &--main {
+      font-family: 'TTFirsNeueBold';
+    }
+  }
+
+  &__images {
+    position: relative;
+    border-radius: 50px;
+
+    @include mobile {
+      width: 50%;
+    }
+
+    @media screen and (max-width: 420px) {
+      width: 80%;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+  }
+}

@@ -1,0 +1,124 @@
+@import "../../styles/utils/vars";
+@import "../../styles/utils/typography.scss";
+@import "../../styles/utils/mixins";
+
+.GetStartedDialog {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #fff;
+  width: 500px;
+  min-height: 100vh;
+  height: max-content;
+  z-index: 100;
+  padding: 120px 50px;
+  overflow: hidden;
+
+  @include mobile {
+    width: 100%;
+    padding: 80px 20px;
+  }
+
+  &__close {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    font-size: 26px;
+    color: #000;
+    background-color: transparent;
+
+    @include mobile {
+      top: 20px;
+      right: 20px;
+    }
+  }
+
+  &__name {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 130%;
+    background: -webkit-linear-gradient(103.85deg, #fa8550 0%, #f33f5e 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  &__title {
+    padding-top: 10px;
+    @include h3;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    gap: 30px;
+  }
+
+  &__formEl {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    width: 100%;
+  }
+
+  &__label {
+    background: rgba(244, 244, 244, 1);
+    border-radius: 30px;
+  }
+
+  &__input,
+  &__textArea {
+    font-family: 'TTFirsNeue', sans-serif;
+    font-size: 16px;
+    color: $dark;
+    padding: 16px 29px;
+    background-color: transparent;
+    width: 100%;
+    outline: none;
+
+    &::placeholder {
+      font-size: 16px;
+      color: $dark;
+    }
+  }
+
+  &__textArea {
+    resize: none;
+  }
+
+  &__btn {
+    @include button;
+    background: $orangeGradient;
+    padding: 18px 40px;
+
+    @include tablet {
+      padding: 12px 30px;
+    }
+
+    @include iPad {
+      padding: 12px 20px;
+    }
+
+    &:hover {
+      box-shadow: 1px 4px 16px rgba(255, 119, 87, 0.6);
+    }
+
+    &:disabled {
+      opacity: 0.5;
+      cursor: none;
+    }
+  }
+
+  &__errorBlock {
+    font-size: 12px;
+    color: red;
+    text-align: right;
+  }
+
+  &__accept {
+    text-align: center;
+    padding-top: 30px;
+    @include h3;
+  }
+}
+

@@ -1,0 +1,129 @@
+@import "../../styles/utils/vars";
+@import "../../styles/utils/typography.scss";
+@import "../../styles/utils/mixins.scss";
+
+.SettingUp {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  position: relative;
+  padding: 60px 90px 0 95px;
+  background-color: $dark;
+  border-radius: 50px;
+  margin: 120px 60px 40px;
+  overflow: hidden;
+  @include adaptiv-value("gap", 130, 40, 0);
+
+  @include tablet {
+    padding: 60px 30px 0 30px;
+  }
+
+  @media (max-width: 1023px) {
+    grid-template-columns: 1fr;
+  }
+
+  @include iPad {
+    padding: 60px 40px;
+  }
+
+  @include mobile {
+    margin: 40px 0 30px;
+    width: 100%;
+    padding: 40px 16px;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 114px;
+
+    @include tablet {
+      padding-bottom: 60px;
+    }
+
+    @media (max-width: 1023px) {
+      width: 100%;
+      padding-bottom: 0;
+    }
+  }
+
+  &__title {
+    @include h2;
+    @include adaptiv-value("font-size", 50, 30, 0);
+
+    @include mobile {
+      text-align: center;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    @include adaptiv-value("gap", 55, 25, 0);
+    border-bottom: 1px solid rgba(48, 60, 119, 1);
+  }
+
+  &__btn {
+    background-color: transparent;
+    padding: 20px 0 11px;
+    font-size: 20px;
+    line-height: 129%;
+    font-weight: 600;
+    color: #fff;
+    border-bottom: 2px solid transparent;
+
+    &:hover,
+    &:active,
+    &--active {
+      background: -webkit-linear-gradient(103.85deg, #FA8550 0%, #F33F5E 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      border-bottom: 2px solid rgba(243, 63, 94, 1);
+    }
+  }
+
+  &__contentBlock {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding-top: 20px;
+  }
+
+  &__content {
+    color: #fff;
+    @include adaptiv-value("font-size", 17, 15, 0);
+    line-height: 150%;
+
+    @include mobile {
+      line-height: 120%;
+      padding-bottom: 20px;
+    }
+  }
+
+  &__images {
+    display: flex;
+    position: relative;
+
+    @media (max-width: 1023px) {
+      display: none;
+    }
+  }
+
+  &__img {
+    position: absolute;
+    @include adaptiv-value("width", 341, 220, 0);
+    height: 100%;
+    bottom: 0;
+    transition: all 0.3s ease 0s;
+
+    &--2 {
+      right: 0;
+    }
+
+    &--hide {
+      bottom: -60%;
+    }
+
+    @include tablet {
+      height: 80%;
+    }
+  }
+}

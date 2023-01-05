@@ -1,0 +1,146 @@
+@import "../../styles/utils/vars.scss";
+@import "../../styles/utils/typography.scss";
+@import "../../styles/utils/mixins.scss";
+
+.Slider {
+  width: 716px;
+  height: max-content;
+  padding-bottom: 60px;
+  box-sizing: content-box;
+  @include adaptiv-value("width", 716, 280, 0);
+  align-self: center;
+
+  @media (max-width: 1023px) {
+    width: 100%;
+  }
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    @include adaptiv-value("font-size", 32, 18, 0);
+    line-height: 129%;
+    font-weight: 600;
+  }
+
+  &__infoBlock {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-top: 12px;
+  }
+
+  &__info {
+    @include adaptiv-value("font-size", 17, 14, 0);
+    line-height: 129%;
+  }
+
+  &__actions {
+    display: flex;
+    gap: 16px;
+
+    @include iPad {
+      display: none;
+    }
+
+    @include mobile {
+      display: none;
+    }
+  }
+
+  &__btn {
+    position: absolute;
+    top: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.12);
+    width: 54px;
+    height: 54px;
+    z-index: 3;
+    background-color: #fff;
+
+    &:hover {
+      box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    }
+
+    &:disabled {
+      opacity: 0.5;
+      box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  &__prev {
+    left: -40px;
+    transform: translateX(-100%);
+    &::after {
+      content: url('../../images/icons/prev.svg');
+    }
+
+    @include tablet {
+      left: -10px;
+    }
+  }
+
+  &__next {
+    right: -40px;
+    transform: translateX(100%);
+    &::after {
+      content: url('../../images/icons/prev.svg');
+      transform: rotate(180deg);
+    }
+
+    @include tablet {
+      right: -10px;
+    }
+  }
+}
+
+.swiper-pagination {
+  position: absolute;
+  bottom: 0;
+  transform: translateY(50%);
+  display: flex;
+  gap: 40px;
+  padding-left: 8px;
+
+  @media (max-width: 1023px) {
+    justify-content: center;
+    padding-left: 0;
+  }
+}
+
+.swiper-pagination-bullet {
+  background-color: rgba(206, 206, 206, 1);
+  width: 9px;
+  height: 9px;
+  opacity: 1;
+  margin: 36px 0 !important;
+  z-index: 3;
+}
+
+.swiper-pagination-bullet-active {
+  position: relative;
+  background-color: $orange !important;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 21px;
+    height: 21px;
+    background-color: transparent;
+    border: 1px solid rgba(243, 63, 94, 1);
+    border-radius: 50%;
+  }
+}
+
+.swiper-button-disabled {
+  color: #fff;
+  opacity: 0.7;
+}

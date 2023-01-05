@@ -1,0 +1,122 @@
+@import "../../styles/utils/vars";
+@import "../../styles/utils/typography.scss";
+@import "../../styles/utils/mixins.scss";
+
+.Footer {
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  padding: 46px 0;
+  border-top: 1px solid rgba(226, 230, 236, 1);
+  height: max-content;
+
+  @media (min-width: 1350px) {
+    margin: 120px auto 40px;
+    width: 1290px;
+  }
+
+  @media (max-width: 1349px) {
+    margin: 70px auto 30px;
+    @include widthConteiner;
+    padding: 30px 0;
+  }
+  
+  @include mobile {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  &__logo {
+    @include logo;
+    z-index: 10;
+  }
+
+  &__nav {
+    padding: 0 15px;
+  }
+
+  &__nav-ul {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    justify-content: center;
+
+    @include mobile {
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+
+  &__nav-li {
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+
+    &:hover {
+      border-bottom: 2px solid $orange;
+    }
+  }
+
+  &__link {
+    @include linkText;
+    font-size: 14px;
+    line-height: 140%;
+  }
+
+  &__social-links {
+    display: flex;
+    align-items: center;
+    gap: 26px;
+  }
+
+  &__social-link {
+    display: block;
+    height: 20px;
+    width: 20px;
+    background-size: contain;
+    color: transparent;
+
+    &--facebook {
+      background: url('../../images/social-logo/facebook-logo.svg') no-repeat center;
+    }
+
+    &--twitter {
+      background: url('../../images/social-logo/twitter-logo.svg') no-repeat center;
+    }
+
+    &--instagram {
+      background: url('../../images/social-logo/instagram-logo.svg') no-repeat center;
+    }
+
+    &--linkedin {
+      background: url('../../images/social-logo/linkedin-logo.svg') no-repeat center;
+    }
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  @media (min-width: 1286px) {
+      &__powered {
+        margin-bottom: calc(0px + 4 * (100vw - 1286px)/ 589);
+      }
+  }
+
+  &__powered-txt {
+    font-family: gotham-pro,sans-serif;
+    line-height: 1.5;
+    color: #555;
+  }
+
+  &__powered__logo {
+    font-family: audiowide,sans-serif;
+    font-size: 27px;
+    line-height: normal;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    color: black;
+}
+
+}

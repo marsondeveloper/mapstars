@@ -1,0 +1,110 @@
+@import "../../styles/utils/vars";
+@import "../../styles/utils/typography.scss";
+@import "../../styles/utils/mixins.scss";
+
+.Examples {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 120px 60px 40px;
+
+  &__title {
+    @include h2;
+    @include adaptiv-value("font-size", 60, 32, 0);
+  }
+
+  &__content {
+    position: relative;
+    display: flex;
+    padding-top: 30px;
+    @include adaptiv-value("gap", 60, 30, 0);
+
+    @media (max-width: 1023px) {
+      flex-direction: column-reverse;
+      width: 100%;
+      align-items: center;
+    }
+  }
+
+  &__prev {
+    position: relative;
+    display: grid;
+    max-width: 513px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 9px;
+
+    @media (max-width: 1023px) {
+      &::after,
+      &::before {
+        display: none;
+      }
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      @include adaptiv-value("width", 143, 95, 0);
+      @include adaptiv-value("height", 143, 95, 0);
+      background-color: #fff;
+      border-radius: 50%;
+    }
+
+    &::after {
+      content: url(../../images//logoExample.svg);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 66px;
+      height: 70px;
+    }
+
+    @include mobile {
+      align-self: center;
+    }
+  }
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+    @include adaptiv-value("width", 252, 126, 0);
+    @include adaptiv-value("height", 273, 136, 0);
+    border-radius: 30px;
+    @include adaptiv-value("padding", 26, 16, 0);
+
+    &:first-child {
+      background: $orangeGradient;
+    }
+
+    &:nth-child(2) {
+      background: url(../../images/car1.png) no-repeat center;
+      background-size: contain;
+    }
+
+    &:nth-child(3) {
+      background: url(../../images/car2.png) no-repeat center;
+      background-size: contain;
+    }
+
+    &:last-child {
+      background-color: $dark;
+      justify-content: flex-end;
+    }
+  }
+
+  &__increase {
+    @include adaptiv-value("font-size", 22, 16, 0);
+    line-height: 129%;
+    color: #fff;
+  }
+
+  &__indicators {
+    @include adaptiv-value("font-size", 55, 22, 0);
+    line-height: 129%;
+    color: #fff;
+  }
+}

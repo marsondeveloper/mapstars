@@ -1,0 +1,201 @@
+@import "../../styles/utils/vars";
+@import "../../styles/utils/typography.scss";
+@import "../../styles/utils/mixins.scss";
+
+.Services {
+  position: relative;
+  margin: 120px 13px 40px;
+  padding: 75px 376px 42px;
+  z-index: 0;
+
+  @media (max-width: 1349px) {
+    margin: 70px auto 30px;
+    @include widthConteiner;
+    padding: 20px;
+  }
+
+  @include mobile {
+    margin: 40px auto 30px;
+    padding: 16px;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url(../../images/services.png) no-repeat center;
+    background-size: contain;
+    padding: 89px 0;
+
+    @include tablet {
+      padding: 79px 0;
+    }
+
+    @include mobile {
+      padding: 30px 0;
+    }
+  }
+
+  &__title {
+    background: -webkit-linear-gradient(103.85deg, #FA8550 0%, #F33F5E 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    @include adaptiv-value("font-size", 230, 100, 0);
+    font-weight: 600;
+    line-height: 129%;
+  }
+
+  &__subtitle {
+    font-family: 'TTFirsNeueMedium';
+    @include adaptiv-value("font-size", 46, 28, 0);
+    line-height: 129%;
+    margin-top: -48px;
+    font-weight: 600;
+    text-align: center;
+
+    @include mobile {
+      margin-top: -10px;
+    }
+  }
+
+  &__apps {
+    @include mobile {
+      display: none;
+    }
+  }
+
+  &__app {
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0px 0px 36px 0px rgba(0, 0, 0, 0.06);
+    border-radius: 50%;
+    @include animation('scaleAdd 3s infinite alternate');
+    z-index: 3;
+
+    &--1 {
+      @include adaptiv-value("width", 105, 21, 0);
+      @include adaptiv-value("height", 105, 21, 0);
+      top: 2%;
+      left: 6%;
+      background-image: url(../../images/services-logo/twitter.svg);
+      @include appBackground;
+    }
+
+    &--2 {
+      @include adaptiv-value("width", 110.8, 22.1, 0);
+      @include adaptiv-value("height", 110.8, 22.1, 0);
+      top: 0;
+      left: 25%;
+      background-image: url(../../images/services-logo/whatsApp.svg);
+      @include appBackground;
+    }
+
+    &--3 {
+      @include adaptiv-value("width", 97, 19.4, 0);
+      @include adaptiv-value("height", 97, 19.4, 0);
+      top: 27%;
+      left: 16%;
+      background-image: url(../../images/services-logo/gooogleMaps.svg);
+      @include appBackground;
+    }
+
+    &--4 {
+      @include adaptiv-value("width", 149, 29.8, 0);
+      @include adaptiv-value("height", 149, 29.8, 0);
+      top: 33%;
+      left: 2.3%;
+      background-image: url(../../images/services-logo/booking.svg);
+      @include appBackground;
+    }
+
+    &--5 {
+      @include adaptiv-value("width", 140, 28, 0);
+      @include adaptiv-value("height", 140, 28, 0);
+      top: 68%;
+      left: 5%;
+      background-image: url(../../images/services-logo/telegram.svg);
+      @include appBackground;
+    }
+
+    &--6 {
+      @include adaptiv-value("width", 117, 23.4, 0);
+      @include adaptiv-value("height", 117, 23.4, 0);
+      top: 58%;
+      left: 20%;
+      background-image: url(../../images/services-logo/facebook.svg);
+      @include appBackground;
+    }
+
+    &--7 {
+      @include adaptiv-value("width", 81.5, 16.3, 0);
+      @include adaptiv-value("height", 81.5, 16.3, 0);
+      bottom: 0;
+      left: 19.5%;
+      background-image: url(../../images/services-logo/gooogleMaps.svg);
+      @include appBackground;
+    }
+
+    &--8 {
+      @include adaptiv-value("width", 76.5, 15.3, 0);
+      @include adaptiv-value("height", 76.5, 15.3, 0);
+      top: 2%;
+      right: 27.4%;
+      background-image: url(../../images/services-logo/gooogleMaps.svg);
+      @include appBackground;
+    }
+
+    &--9 {
+      @include adaptiv-value("width", 133, 26.6, 0);
+      @include adaptiv-value("height", 133, 26.6, 0);
+      top: 17%;
+      right: 14.2%;
+      background-image: url(../../images/services-logo/linkedin.svg);
+      @include appBackground;
+    }
+
+    &--10 {
+      @include adaptiv-value("width", 126, 25.2, 0);
+      @include adaptiv-value("height", 126, 25.2, 0);
+      top: 0;
+      right: 2.4%;
+      background-image: url(../../images/services-logo/streetView.png);
+      @include appBackground;
+    }
+
+    &--11 {
+      @include adaptiv-value("width", 135, 27, 0);
+      @include adaptiv-value("height", 135, 27, 0);
+      top: 38%;
+      right: 2%;
+      background-image: url(../../images/services-logo/gooogleMaps.svg);
+      @include appBackground;
+    }
+
+    &--12 {
+      @include adaptiv-value("width", 76.4, 15.2, 0);
+      @include adaptiv-value("height", 76.4, 15.2, 0);
+      top: 50%;
+      right: 15.34%;
+      background-image: url(../../images/services-logo/gooogleMaps.svg);
+      @include appBackground;
+    }
+
+    &--13 {
+      @include adaptiv-value("width", 116, 23.2, 0);
+      @include adaptiv-value("height", 116, 23.2, 0);
+      bottom: 10%;
+      right: 21%;
+      background-image: url(../../images/services-logo/instagran.svg);
+      @include appBackground;
+    }
+
+    &--14 {
+      @include adaptiv-value("width", 142.6, 28.52, 0);
+      @include adaptiv-value("height", 142.6, 28.52, 0);
+      bottom: 2%;
+      right: 5%;
+      background-image: url(../../images/services-logo/gooogleMaps.svg);
+      @include appBackground;
+    }
+  }
+}

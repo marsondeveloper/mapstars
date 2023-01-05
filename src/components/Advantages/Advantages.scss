@@ -1,0 +1,94 @@
+@import "../../styles/utils/vars";
+@import "../../styles/utils/typography.scss";
+@import "../../styles/utils/mixins.scss";
+
+.Advantages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__title {
+    @include h2;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding-top: 40px;
+
+    @include mobile {
+      gap: 20px;
+    }
+  }
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 380px;
+    padding: 5px;
+    transition: all 0.4s ease 0s;
+    border-radius: 4px;
+
+    @include iPad {
+      width: 320px;
+    }
+
+    @include mobile {
+      width: 100%;
+    }
+  }
+
+  &__logo {
+    @include adaptiv-value("height", 60, 30, 0);
+    @include adaptiv-value("width", 60, 30, 0);
+
+    @include mobile {
+      align-self: center;
+    }
+
+    &--1 {
+      background: url(../../images/advantages-logo/atom.svg) no-repeat center;
+      background-size: contain;
+    }
+
+    &--2 {
+      background: url(../../images/advantages-logo/price.svg) no-repeat center;
+      background-size: contain;
+    }
+
+    &--3 {
+      background: url(../../images/advantages-logo/implementationce.svg) no-repeat center;
+      background-size: contain;
+    }
+
+    &--4 {
+      background: url(../../images/advantages-logo/experience.svg) no-repeat center;
+      background-size: contain;
+    }
+
+    &--5 {
+      background: url(../../images/advantages-logo/automation.svg) no-repeat center;
+      background-size: contain;
+    }
+
+    &--6 {
+      background: url(../../images/advantages-logo/efficiency.svg) no-repeat center;
+      background-size: contain;
+    }
+  }
+
+  &__block-name {
+    @include h4;
+  }
+
+  &__block-info {
+    font-family: 'Gilroy', sans-serif;
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: 500;
+    color: rgba(110, 116, 142, 1);
+  }
+}

@@ -1,0 +1,101 @@
+@import "../../styles/utils/vars";
+@import "../../styles/utils/typography.scss";
+@import "../../styles/utils/mixins.scss";
+
+.Contacts {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-left: 8px;
+  margin-bottom: 45px;
+
+  &__title {
+    @include h2;
+    @include adaptiv-value("font-size", 100, 48, 0);
+  }
+
+  &__subtitle {
+    @include adaptiv-value("font-size", 69, 28, 0);
+    line-height: 129%;
+    font-weight: 500;
+  }
+
+  &__contacts {
+    padding-top: 19px;
+    display: flex;
+    gap: 30px;
+
+    @include mobile {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+
+  &__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 247, 248, 1);
+    border-radius: 40px;
+    padding: 29px 40px;
+    transition: all 0.4s ease;
+
+    &:hover {
+      box-shadow: 1px 4px 16px rgba(226, 219, 219, 0.6);
+    }
+
+    @include tablet {
+      padding: 20px 30px;
+    }
+
+    @include mobile {
+      padding: 10px;
+    }
+  }
+
+  &__link {
+    color: $dark;
+    font-size: 18px;
+    line-height: 140%;
+    font-weight: 500;
+
+    &--telegram {
+      position: relative;
+      padding-left: 36px;
+
+      &::before {
+        position: absolute;
+        left: -10px;
+        content: url(../../images/icons/telegram.svg);
+        width: 26px;
+        height: 26px;
+      }
+    }
+  }
+
+  &__get-started {
+    position: absolute;
+    top: -5px;
+    right: 102px;
+    @include adaptiv-value("height", 255, 70, 0);
+    @include adaptiv-value("width", 255, 120, 0);
+    border-radius: 50%;
+    background: $orangeGradient;
+    color: #fff;
+    @include adaptiv-value("font-size", 30, 18, 0);
+    font-weight: 500;
+    line-height: 100%;
+    @include animation('scaleBtn 1s infinite alternate');
+
+    &--blur {
+      @include animation('blurBtn 1s infinite alternate');
+      z-index: 0;
+    }
+
+    @include mobile {
+      right: 0;
+      top: auto;
+      bottom: -91px;
+    }
+  }
+}
